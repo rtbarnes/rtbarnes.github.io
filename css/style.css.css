@@ -1,0 +1,130 @@
+html {
+  height: 1500px;
+}
+
+body {
+  margin: 0;
+  background-image: url("http://i.imgur.com/C2XlvQk.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-text {
+  opacity: 0;
+  position: absolute;
+  top: -35px;
+  font-family: 'Lobster', cursive;
+  font-size: 7em;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle {
+  opacity: 0;
+  position: relative;
+  top: -35px;
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  top: -150px;
+}
+
+.navbar {
+  opacity: 0;
+  position: absolute;
+  top: 65px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar li {
+  list-style: none;
+  font-family: 'Raleway', cursive;
+  font-size: 1.75em;
+  letter-spacing: 0.2em;
+  display: inline;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+
+.navbar li:nth-child(-n+3)::after {
+  content: " |";
+  color: #fff;
+}
+
+.navbar ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+
+.about {
+  position: absolute;
+  top: 1000px;
+}
+
+.pic {
+  width: 20%;
+  height: auto;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-family: 'Raleway', cursive;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #fff;
+  word-wrap: break-word;
+  width: 300px;
+  margin: 10px auto;
+}
+
+#contact {
+  text-align: center;
+  width: 70%;
+  font-family: 'Rubik Mono One';
+  font-style: italic;
+  margin: 5px auto;
+}
+
+.aboutScroll {
+  width: 100%;
+  height: 120px;
+}
+
+@media screen and (min-width: 992px) {
+  #contact {
+    width: 80%;
+  }
+
+  .about p {
+    width: 430px;
+    margin: 10px auto;
+  }
+
+  .aboutScroll {
+    height: 100px;
+  }
+}
